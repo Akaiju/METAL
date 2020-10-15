@@ -17,6 +17,9 @@ public class Gun : MonoBehaviour
     [SerializeField]
     private Transform firePoint;
 
+    [SerializeField]
+    private ParticleSystem muzzleFlash;
+
     // Update is called once per frame
     void Update()
     {
@@ -27,6 +30,7 @@ public class Gun : MonoBehaviour
             {
                 timer = 0f;
                 FireGun();
+                muzzleFlash.Play();
             }
         }
     }
