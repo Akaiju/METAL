@@ -17,8 +17,8 @@ public class Gun : MonoBehaviour
     [SerializeField]
     private Transform firePoint;
 
-    [SerializeField]
-    private ParticleSystem muzzleFlash;
+    //[SerializeField]
+    //private LineRenderer muzzleFlash;
 
     // checks to see if lmb is clicked to fire the weapon and play audiosource attached
     void Update()
@@ -30,7 +30,7 @@ public class Gun : MonoBehaviour
             {
                 timer = 0f;
                 FireGun();
-                muzzleFlash.Play();
+                //muzzleFlash.enabled;
             }
         }
     }
