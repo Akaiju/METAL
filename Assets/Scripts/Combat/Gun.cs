@@ -17,8 +17,8 @@ public class Gun : MonoBehaviour
     [SerializeField]
     private Transform firePoint;
 
-    //[SerializeField]
-    //private LineRenderer muzzleFlash;
+    [SerializeField]
+    private ParticleSystem muzzleParticle;
 
     // checks to see if lmb is clicked to fire the weapon and play audiosource attached
     void Update()
@@ -30,7 +30,6 @@ public class Gun : MonoBehaviour
             {
                 timer = 0f;
                 FireGun();
-                //muzzleFlash.enabled;
             }
         }
     }
@@ -39,6 +38,8 @@ public class Gun : MonoBehaviour
     private void FireGun()
     {
         Debug.DrawRay(firePoint.position, firePoint.forward * 100, Color.red, 2f);
+
+        muzzleParticle.Play();
 
         Ray ray = new Ray(firePoint.position, firePoint.forward);
         RaycastHit hitInfo;
