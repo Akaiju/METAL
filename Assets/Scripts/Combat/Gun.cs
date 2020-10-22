@@ -18,9 +18,9 @@ public class Gun : MonoBehaviour
     private Transform firePoint;
 
     [SerializeField]
-    private ParticleSystem muzzleFlash;
+    private ParticleSystem muzzleParticle;
 
-    // Update is called once per frame
+    // checks to see if lmb is clicked to fire the weapon and play audiosource attached
     void Update()
     {
         timer += Time.deltaTime;
@@ -30,14 +30,16 @@ public class Gun : MonoBehaviour
             {
                 timer = 0f;
                 FireGun();
-                muzzleFlash.Play();
             }
         }
     }
 
+    //casts a ray that will collide with objects and detract health if they have any
     private void FireGun()
     {
-        Debug.DrawRay(firePoint.position, firePoint.forward * 100, Color.blue, 2f);
+        Debug.DrawRay(firePoint.position, firePoint.forward * 100, Color.red, 2f);
+
+        muzzleParticle.Play();
 
         Ray ray = new Ray(firePoint.position, firePoint.forward);
         RaycastHit hitInfo;
