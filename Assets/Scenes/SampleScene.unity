@@ -5887,6 +5887,7 @@ GameObject:
   - component: {fileID: 171185084}
   - component: {fileID: 171185085}
   - component: {fileID: 171185086}
+  - component: {fileID: 171185087}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -6020,6 +6021,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 50
+--- !u!114 &171185087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171185079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10e9d78911c27b4fa6b93e7fdce05ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 25
 --- !u!1 &256074082
 GameObject:
   m_ObjectHideFlags: 0
@@ -7468,7 +7482,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
-  - component: {fileID: 963194230}
+  - component: {fileID: 963194231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7574,7 +7588,7 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &963194230
+--- !u!114 &963194231
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7583,10 +7597,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b10e9d78911c27b4fa6b93e7fdce05ae, type: 3}
+  m_Script: {fileID: 11500000, guid: dcbbf21069b34f245a65c39300f3cb78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
 --- !u!1 &1020197203
 GameObject:
   m_ObjectHideFlags: 0
@@ -7928,7 +7941,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14770
+  m_Name: pb_Mesh15492
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8402,7 +8415,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14604
+  m_Name: pb_Mesh15326
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

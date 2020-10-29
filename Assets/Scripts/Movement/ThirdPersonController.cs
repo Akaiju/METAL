@@ -35,25 +35,12 @@ public class ThirdPersonController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        var inputDirection = new Vector3(input.x, 0, input.y);
-
-        Vector3 cameraFlattenedForward = Camera.main.transform.forward;
-        cameraFlattenedForward.y = 0;
-        var cameraRotation = Quaternion.LookRotation(cameraFlattenedForward);
-
-        Vector3 cameraRelativeInputDirection = cameraRotation * inputDirection;
-
-        collider.material = inputDirection.magnitude > 0 ? movingPhysicsMaterial : stoppingPhysicsMaterial;
+        collider.material = input.magnitude > 0 ? movingPhysicsMaterial : stoppingPhysicsMaterial;
 
         if (rigidbody.velocity.magnitude < maxSpeed)
         {
-            rigidbody.AddForce(cameraRelativeInputDirection * accelerationForce, ForceMode.Acceleration);
-        }
-
-        if (cameraRelativeInputDirection.magnitude > 0)
-        {
-            var targetRotation = Quaternion.LookRotation(cameraRelativeInputDirection);
-            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, turnSpeed);
+            rigidbody.AddForce(transform.forward * input.y * accelerationForce, ForceMode.Acceleration);
+            rigidbody.AddForce(transform.right * input.x * accelerationForce, ForceMode.Acceleration);
         }
     }
 
