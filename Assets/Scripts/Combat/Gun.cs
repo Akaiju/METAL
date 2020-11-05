@@ -10,15 +10,13 @@ public class Gun : MonoBehaviour
 
     [SerializeField]
     [Range(1, 10)]
-    private int damage = 1;
+    private int damage = 5;
 
-    private float timer;
 
     [SerializeField]
     private Transform firePoint;
 
-    [SerializeField]
-    private ParticleSystem muzzleParticle;
+    private float timer;
 
     // checks to see if lmb is clicked to fire the weapon and play audiosource attached
     void Update()
@@ -39,14 +37,13 @@ public class Gun : MonoBehaviour
     {
         Debug.DrawRay(firePoint.position, firePoint.forward * 100, Color.red, 2f);
 
-        muzzleParticle.Play();
-
         Ray ray = new Ray(firePoint.position, firePoint.forward);
         RaycastHit hitInfo;
 
         if (Physics.Raycast(ray, out hitInfo, 100))
         {
             var health = hitInfo.collider.GetComponent<Health>();
+
             if (health != null)
                 health.TakeDamage(damage);
         }
