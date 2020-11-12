@@ -836,19 +836,17 @@ MonoBehaviour:
   m_Appearance:
     pathColor: {r: 0, g: 1, b: 0, a: 1}
     inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 1.24
-  m_Looped: 0
+    width: 2.56
+  m_Looped: 1
   m_Waypoints:
-  - position: {x: 47.173317, y: 4.9756002, z: 10.190602}
+  - position: {x: 38.294674, y: 4.545724, z: 9.281253}
     roll: 0
   - position: {x: 0.40477622, y: -0.40261012, z: -0.6271291}
     roll: 0
-  - position: {x: -2.5389614, y: 15.150767, z: 32.830917}
-    roll: 0
-  - position: {x: 39.882294, y: 18.358572, z: 40.175236}
+  - position: {x: -5.2115083, y: 16.516056, z: 35.71882}
+    roll: -26.06
+  - position: {x: 32.767178, y: 18.881598, z: 39.036396}
     roll: -30.3
-  - position: {x: 47.17632, y: 4.966078, z: 10.174822}
-    roll: 0
 --- !u!4 &294994334
 Transform:
   m_ObjectHideFlags: 0
@@ -857,7 +855,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294994332}
   m_LocalRotation: {x: -0.21867032, y: -0.055005077, z: 0.012345644, w: -0.9741691}
-  m_LocalPosition: {x: -20, y: 29, z: -16}
+  m_LocalPosition: {x: -20, y: 29, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2841,8 +2839,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.40442434, y: -0.4028986, z: 0.2049445, w: 0.7950544}
-  m_LocalPosition: {x: 30.983452, y: 29.066164, z: -10.967684}
+  m_LocalRotation: {x: 0.37486622, y: -0.25774685, z: 0.10932492, w: 0.88379294}
+  m_LocalPosition: {x: 29.000002, y: 29.014208, z: -22.000004}
   m_LocalScale: {x: 0.99999994, y: 1, z: 0.99999994}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4702,8 +4700,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566471623}
-  m_LocalRotation: {x: 0.40442434, y: -0.4028986, z: 0.2049445, w: 0.7950544}
-  m_LocalPosition: {x: 30.983452, y: 29.066164, z: -10.967684}
+  m_LocalRotation: {x: 0.37486622, y: -0.25774685, z: 0.10932492, w: 0.88379294}
+  m_LocalPosition: {x: 29.000002, y: 29.014208, z: -22.000004}
   m_LocalScale: {x: 1, y: 1, z: 0.99999994}
   m_Children:
   - {fileID: 2068780590}
@@ -5160,9 +5158,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 294994333}
-  m_PathPosition: 0.16097854
+  m_PathPosition: 3.531107
   m_PositionUnits: 0
-  m_PathOffset: {x: -1.525666, y: -0.7646217, z: -12.108145}
+  m_PathOffset: {x: -2.8185775, y: -0.6352771, z: 23.952084}
   m_XDamping: 0
   m_YDamping: 3.8
   m_ZDamping: 1
