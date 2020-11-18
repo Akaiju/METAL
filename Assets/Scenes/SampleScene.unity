@@ -1304,6 +1304,7 @@ MonoBehaviour:
   fireRate: 1.5
   damage: 5
   firePoint: {fileID: 1142039081}
+  gunfireSource: {fileID: 500665764}
   Bullet_Emitter: {fileID: 1142039080}
   Bullet: {fileID: 8218192192215578708, guid: fcc16484697b7b44fa881302d0565597, type: 3}
   Bullet_Forward_Force: 5000
