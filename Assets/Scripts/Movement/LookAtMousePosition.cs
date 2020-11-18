@@ -8,6 +8,7 @@ public class MousePositionAndLook : MonoBehaviour
     [TooltipAttribute("speed is the rate at which the object will rotate")]
     private float rotateSpeed;
 
+    public Vector3 targetPoint;
 
     private void Start()
     {
@@ -39,7 +40,7 @@ public class MousePositionAndLook : MonoBehaviour
         if (playerPlane.Raycast(ray, out hitDistance))
         {
             // Get the point along the ray that hits the calculated distance.
-            Vector3 targetPoint = ray.GetPoint(hitDistance);
+            targetPoint = ray.GetPoint(hitDistance);
 
             // Determine the target rotation.  This is the rotation if the transform looks at the target point.
             Quaternion targetRotation = Quaternion.LookRotation(targetPoint - transform.position);

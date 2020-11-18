@@ -16,6 +16,9 @@ public class Gun : MonoBehaviour
     private Transform firePoint;
 
     [SerializeField]
+    private LookAtMousePosition lookAtMousePosition;
+
+    [SerializeField]
     private AudioSource gunfireSource;
 
     [SerializeField]
