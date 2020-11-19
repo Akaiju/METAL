@@ -47,16 +47,5 @@ public class ThirdPersonController : MonoBehaviour
     {
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = Input.GetAxisRaw("Vertical");
-
-        //here's where the cursor should cast a ray that the player character turns to orient to
-        float distance;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        if (plane.Raycast(ray, out distance))
-        {
-
-            worldPosition = ray.GetPoint(distance);
-            gameObject.transform.rotation = Quaternion.LookRotation(worldPosition - gameObject.transform.position);
-        }
     }
 }

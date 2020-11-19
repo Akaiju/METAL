@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MousePositionAndLook : MonoBehaviour
+public class LookAtMousePosition : MonoBehaviour
 {
     [SerializeField]
     [TooltipAttribute("speed is the rate at which the object will rotate")]

@@ -1417,7 +1417,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 375604885}
-  m_LocalRotation: {x: 0.3469518, y: -0.62236816, z: 0.6035639, w: 0.35776109}
+  m_LocalRotation: {x: 0.3469521, y: -0.622368, z: 0.6035637, w: 0.3577614}
   m_LocalPosition: {x: 14.999999, y: 36, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1526,7 +1526,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b10e9d78911c27b4fa6b93e7fdce05ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 25
+  rotateSpeed: 25
+  targetPoint: {x: 0, y: 0, z: 0}
 --- !u!114 &500665762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2841,7 +2842,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 102.09, y: -106}
+  m_AnchoredPosition: {x: 102.09, y: -32}
   m_SizeDelta: {x: 204.17944, y: 53.78894}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &838329820
@@ -2877,9 +2878,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.9811321, g: 0.36561054, b: 0.36561054, a: 1}
+    m_PressedColor: {r: 0.4811321, g: 0, b: 0, a: 1}
+    m_SelectedColor: {r: 0.9339623, g: 0.24230155, b: 0.24230155, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3126,7 +3127,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.3469518, y: -0.62236816, z: 0.6035639, w: 0.35776109}
+  m_LocalRotation: {x: 0.3469521, y: -0.622368, z: 0.6035637, w: 0.3577614}
   m_LocalPosition: {x: 14.999999, y: 36, z: 2}
   m_LocalScale: {x: 0.99999994, y: 1, z: 0.99999994}
   m_Children: []
