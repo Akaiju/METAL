@@ -12,9 +12,14 @@ public class Gun : MonoBehaviour
     [Range(1, 10)]
     private int damage = 5;
 
-
     [SerializeField]
     private Transform firePoint;
+
+    [SerializeField]
+    private LookAtMousePosition lookAtMousePosition;
+
+    [SerializeField]
+    private AudioSource gunfireSource;
 
     [SerializeField]
     public GameObject Bullet_Emitter;
@@ -56,6 +61,7 @@ public class Gun : MonoBehaviour
     //casts a ray that will collide with objects and detract health if they have any
     private void FireGun()
     {
+        gunfireSource.Play();
         Debug.DrawRay(firePoint.position, firePoint.forward * 100, Color.red, 2f);
 
         Ray ray = new Ray(firePoint.position, firePoint.forward);
