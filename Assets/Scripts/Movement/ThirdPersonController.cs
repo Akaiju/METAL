@@ -23,13 +23,15 @@ public class ThirdPersonController : MonoBehaviour
     private new Rigidbody rigidbody;
     private Vector2 input;
     private new Collider collider;
+    private readonly int movementInputAnimParam = Animator.StringToHash("movementInput");
+    private Animator animator;
     Vector3 worldPosition;
     
-
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
         collider = GetComponent<Collider>();
+        animator = GetComponentInChildren<Animator>();
 
     }
     private void FixedUpdate()
@@ -40,6 +42,7 @@ public class ThirdPersonController : MonoBehaviour
         {
             rigidbody.AddForce(transform.forward * input.y * accelerationForce, ForceMode.Acceleration);
             rigidbody.AddForce(transform.right * input.x * accelerationForce, ForceMode.Acceleration);
+            animator.SetFloat(movementInputAnimParam, input.magnitude);
         }
     }
 
