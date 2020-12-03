@@ -50,7 +50,7 @@ public class Gun : MonoBehaviour
 
                 Temporary_RigidBody.AddForce(transform.forward * Bullet_Forward_Force);
                 
-                Destroy(Temporary_Bullet_Handler, 3.0f);
+                Destroy(Temporary_Bullet_Handler, 1.0f);
 
                 timer = 0f;
                 FireGun();

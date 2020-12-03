@@ -23,13 +23,15 @@ public class ThirdPersonController : MonoBehaviour
     private new Rigidbody rigidbody;
     private Vector2 input;
     private new Collider collider;
+    private readonly int movementInputAnimParam = Animator.StringToHash("movementInput");
+    private Animator animator;
     Vector3 worldPosition;
     
-
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
         collider = GetComponent<Collider>();
+        animator = GetComponentInChildren<Animator>();
 
     }
     private void FixedUpdate()
@@ -40,6 +42,7 @@ public class ThirdPersonController : MonoBehaviour
         {
             rigidbody.AddForce(transform.forward * input.y * accelerationForce, ForceMode.Acceleration);
             rigidbody.AddForce(transform.right * input.x * accelerationForce, ForceMode.Acceleration);
+            animator.SetFloat(movementInputAnimParam, input.magnitude);
         }
     }
 
@@ -47,16 +50,5 @@ public class ThirdPersonController : MonoBehaviour
     {
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = Input.GetAxisRaw("Vertical");
-
-        //here's where the cursor should cast a ray that the player character turns to orient to
-        float distance;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        if (plane.Raycast(ray, out distance))
-        {
-
-            worldPosition = ray.GetPoint(distance);
-            gameObject.transform.rotation = Quaternion.LookRotation(worldPosition - gameObject.transform.position);
-        }
     }
 }
