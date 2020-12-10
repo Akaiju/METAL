@@ -1510,9 +1510,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 263b6b6146a117e43a25cb0c6a2e6269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accelerationForce: 14
+  accelerationForce: 20
   maxSpeed: 7
-  turnSpeed: 0.25
+  turnSpeed: 0.4
   stoppingPhysicsMaterial: {fileID: 13400000, guid: fd91bc14735a79a4bb31e4133e9830c3,
     type: 2}
   movingPhysicsMaterial: {fileID: 13400000, guid: d200e3ade98e7db4d8d281d0b6738511,
