@@ -8,10 +8,10 @@ public class ChangeScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        void OnCollisionEnter(Collider other)
+        void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.tag == "Player")
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(SampleScene);
         }
     }
 
