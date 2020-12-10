@@ -159,8 +159,9 @@ GameObject:
   - component: {fileID: 22609416154025802}
   - component: {fileID: 22609416154025801}
   - component: {fileID: 22609416154025800}
+  - component: {fileID: 5281012992513526329}
   m_Layer: 0
-  m_Name: Enemy 1
+  m_Name: REnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -208,7 +209,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e75ce6350bea98f47bd5e236aa51119e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 5
+--- !u!114 &5281012992513526329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22609416154025799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2583214007a703148803ab369dd0312b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &22609416305724469
 GameObject:
   m_ObjectHideFlags: 0
