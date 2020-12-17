@@ -270,7 +270,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4171253320024000730}
   m_LocalRotation: {x: -0, y: 0.0037011798, z: -0, w: -0.9999932}
-  m_LocalPosition: {x: 1.3385347, y: 0.5, z: 0.21353877}
+  m_LocalPosition: {x: 0.025999937, y: 1.375, z: 0.27603495}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4174198860663446634}
@@ -1275,7 +1275,6 @@ GameObject:
   - component: {fileID: 4085573079060358866}
   - component: {fileID: 4171253318577203026}
   - component: {fileID: 4171253318577203027}
-  - component: {fileID: 4171253318577203024}
   - component: {fileID: 4171253318577203025}
   m_Layer: 0
   m_Name: RobotPlayer
@@ -1464,7 +1463,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireRate: 0.5
-  damage: 5
   firePoint: {fileID: 4171253320024000731}
   lookAtMousePosition: {fileID: 0}
   gunfireSource: {fileID: 137186711210787038}
@@ -1485,19 +1483,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateSpeed: 25
   targetPoint: {x: 0, y: 0, z: 0}
---- !u!114 &4171253318577203024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4172160925296437640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e75ce6350bea98f47bd5e236aa51119e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 50
 --- !u!114 &4171253318577203025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1510,9 +1495,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 263b6b6146a117e43a25cb0c6a2e6269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accelerationForce: 14
+  accelerationForce: 20
   maxSpeed: 7
-  turnSpeed: 0.25
+  turnSpeed: 0.4
   stoppingPhysicsMaterial: {fileID: 13400000, guid: fd91bc14735a79a4bb31e4133e9830c3,
     type: 2}
   movingPhysicsMaterial: {fileID: 13400000, guid: d200e3ade98e7db4d8d281d0b6738511,
