@@ -9,10 +9,6 @@ public class Gun : MonoBehaviour
     private float fireRate = 1;
 
     [SerializeField]
-    [Range(1, 10)]
-    private int damage = 5;
-
-    [SerializeField]
     private Transform firePoint;
 
     [SerializeField]
@@ -62,17 +58,6 @@ public class Gun : MonoBehaviour
     private void FireGun()
     {
         gunfireSource.Play();
-        Debug.DrawRay(firePoint.position, firePoint.forward * 100, Color.red, 2f);
 
-        Ray ray = new Ray(firePoint.position, firePoint.forward);
-        RaycastHit hitInfo;
-
-        if (Physics.Raycast(ray, out hitInfo, 100))
-        {
-            var health = hitInfo.collider.GetComponent<Health>();
-
-            if (health != null)
-                health.TakeDamage(damage);
-        }
     }
 }
