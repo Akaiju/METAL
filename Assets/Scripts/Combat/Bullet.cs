@@ -13,10 +13,13 @@ public class Bullet : MonoBehaviour
     {
         if (gameObjectInformation.gameObject.tag == "Enemy")
         {
-            var health = GetComponent<Health>();
+            var health = gameObjectInformation.gameObject.GetComponent<Health>();
 
             if (health != null)
                 health.TakeDamage(damage);
+            Debug.Log("Collision detected, damage dealt");
         }
+
+        Debug.Log("Collision detected, no damage dealt");
     }
 }

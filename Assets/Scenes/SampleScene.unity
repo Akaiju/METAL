@@ -2577,7 +2577,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 23621644566451035, guid: a6b83266ef776584f8578d626f68afbe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: a6b83266ef776584f8578d626f68afbe, type: 3}
 --- !u!1001 &744910207
 PrefabInstance:
@@ -2646,7 +2652,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 23621644566451035, guid: 647aae6b609272043a558278e46bc8f9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 647aae6b609272043a558278e46bc8f9, type: 3}
 --- !u!1 &766043572 stripped
 GameObject:
