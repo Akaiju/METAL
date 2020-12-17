@@ -1464,7 +1464,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireRate: 0.5
-  damage: 5
   firePoint: {fileID: 4171253320024000731}
   lookAtMousePosition: {fileID: 0}
   gunfireSource: {fileID: 137186711210787038}

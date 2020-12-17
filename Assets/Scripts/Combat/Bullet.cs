@@ -4,20 +4,18 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-
     [SerializeField]
     [Range(1, 10)]
-    private int damage = 5;
+    private int damage = 10;
 
     // Update is called once per frame
-    //void OnCollision()
-    //{
-    //    if (OnCollision)
-    //    {
-    //        var health = hitInfo.collider.GetComponent<Health>();
-
-    //        if (health != null)
-    //            health.TakeDamage(damage);
-    //    }
-    //}
+    void OnCollisionEnter(Collision gameObjectInformation)
+    {
+        if (gameObjectInformation.gameObject.tag == "Enemy")
+        {
+            var health = GetComponent<Health>();
+            
+            health.TakeDamage(damage);
+        }
+    }
 }

@@ -58,6 +58,5 @@ public class Gun : MonoBehaviour
     private void FireGun()
     {
         gunfireSource.Play();
-
     }
 }
