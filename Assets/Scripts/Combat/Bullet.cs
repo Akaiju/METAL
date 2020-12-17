@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField]
     [Range(1, 10)]
-    private int damage = 10;
+    private int damage = 5;
 
     // Update is called once per frame
     void OnCollisionEnter(Collision gameObjectInformation)
@@ -14,8 +14,9 @@ public class Bullet : MonoBehaviour
         if (gameObjectInformation.gameObject.tag == "Enemy")
         {
             var health = GetComponent<Health>();
-            
-            health.TakeDamage(damage);
+
+            if (health != null)
+                health.TakeDamage(damage);
         }
     }
 }
